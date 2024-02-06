@@ -1,0 +1,6011 @@
+{
+  "version" : "59.0",
+  "nodes" : {
+    "LOAD_DATASET0" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "UP2GO_CPRM_BM__txt_Description__c", "Id", "Name", "CurrencyIsoCode", "UP2GO_CPRM_BM__ftxt_BusinessUnit__c", "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c", "UP2GO_CPRM_BM__lkp_ProductHierarchy__c", "UP2GO_CPRM_BM__pkl_Category__c", "fcur_CostLifetime__c", "fcur_CostSOPPlus4__c", "ftxt_Level1__c", "ftxt_Level3__c", "ftxt_Level4__c", "ftxt_Level5__c", "ftxt_Level6__c", "ftxt_Year__c", "lkp_BillToAddress__c", "lkp_Project__c", "lkp_SalesProject__c", "lkp_SellingLegalEntity__c", "lkp_SoldToAddress__c", "lkp_SourceRecord__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__Credit__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__Credit__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "CurrencyIsoCode", "UP2GO_CPRM_BM__mdr_Service__c", "UP2GO_CPRM_BM__cur_Price__c", "UP2GO_CPRM_BM__dat_FirstDay__c", "UP2GO_CPRM_BM__fcur_FiscalYearRevenue__c", "UP2GO_CPRM_BM__fcur_Revenue__c", "UP2GO_CPRM_BM__num_Volume__c", "cur_OneTimeCost__c", "cur_OneTimePayment__c", "fcur_EBITSOPPlus4__c", "fcur_EBIT__c", "fcur_SalesSOPPlus4__c", "fcur_Sales__c", "fcur_TotalOneTimeCosts__c", "fcur_TotalOneTimePayments__c", "ftxt_IncludeInSOPPlusN__c", "fcur_SalesDOSPlus5__c", "ftxt_IncludeInDOSPlus5__c", "fpct_EBITPerPeriod__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__ServiceSchedule__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__ServiceSchedule__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET2" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "lkp_BillToAddress__c", "lkp_SoldToAddress__c", "Id", "Name", "CurrencyIsoCode", "UP2GO_CPRM_BM__lkp_CustomerPlan__c", "UP2GO_CPRM_BM__lkp_SalesProject__c", "UP2GO_CPRM_BM__dat_FirstScheduleDay__c", "UP2GO_CPRM_BM__dat_LastScheduleDay__c", "UP2GO_CPRM_BM__lkp_SoftwareHierarchy__c", "UP2GO_CPRM_BM__ftxt_Level1__c", "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c", "UP2GO_CPRM_BM__lkp_ExchangeRate__c", "ftxt_Level2__c", "ftxt_Level3__c", "ftxt_Level4__c", "ftxt_Level5__c", "ftxt_Level6__c", "lkp_SellingLegalEntity__c", "lkp_ShipToAddress__c", "pkl_BusinessModelArchetype__c", "pkl_BusinessModelType__c", "pkl_PricingModel__c", "pkl_RevenueModel__c", "lkp_SourceRecord__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__Saas__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__Saas__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET3" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "UP2GO_CPRM_BM__ftxt_Division__c", "Id", "Name", "CurrencyIsoCode", "UP2GO_CPRM_BM__dat_FirstDay__c", "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c", "UP2GO_CPRM_BM__lkp_ProductHierarchy__c", "UP2GO_CPRM_BM__txt_Description__c", "ftxt_Level2__c", "ftxt_Level3__c", "ftxt_Level4__c", "ftxt_Level5__c", "ftxt_Level6__c", "lkp_BillToAddress__c", "lkp_SalesProject__c", "lkp_SellingLegalEntity__c", "lkp_SoldToAddress__c", "pkl_ToolingPayment__c", "UP2GO_CPRM_BM__dat_FirstScheduleDay__c", "UP2GO_CPRM_BM__dat_LastScheduleDay__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__Tooling__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__Tooling__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET4" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "CurrencyIsoCode", "UP2GO_CPRM_BM__mdr_SaaS__c", "UP2GO_CPRM_BM__dat_FirstDay__c", "fcur_EBITSOPPlus4__c", "fcur_EBIT__c", "fcur_SalesDOSPlus5__c", "fcur_SalesSOPPlus4__c", "fcur_Sales__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__SaasSchedule__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__SaasSchedule__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET5" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "lkp_BillToAddress__c", "lkp_SoldToAddress__c", "Id", "Name", "UP2GO_CPRM_BM__dat_FirstScheduleDay__c", "UP2GO_CPRM_BM__dat_LastScheduleDay__c", "lkp_SourceRecord__c", "UP2GO_CPRM_BM__ftxt_Level1__c", "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c", "ftxt_Level2__c", "ftxt_Level3__c", "ftxt_Level4__c", "ftxt_Level5__c", "ftxt_Level6__c", "lkp_Project__c", "lkp_SellingLegalEntity__c", "pkl_BusinessModel__c", "lkp_Plant__c", "lkp_ReferencePart__c", "cpa_TriadofModel__c", "UP2GO_CPRM_BM__lkp_ExchangeRate__c", "pkl_BusinessModelArchetype__c", "pkl_BusinessModelType__c", "pkl_PricingModel__c", "pkl_RevenueModel__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__Product__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__Product__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET6" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "lkp_BillToAddress__c", "lkp_SoldToAddress__c", "Id", "Name", "UP2GO_CPRM_BM__lkp_SalesProject__c", "UP2GO_CPRM_BM__dat_FirstScheduleDay__c", "UP2GO_CPRM_BM__dat_LastScheduleDay__c", "UP2GO_CPRM_BM__lkp_ServiceHierarchy__c", "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c", "ftxt_Level2__c", "ftxt_Level3__c", "ftxt_Level4__c", "ftxt_Level5__c", "ftxt_Level6__c", "lkp_Project__c", "lkp_SellingLegalEntity__c", "pkl_BusinessModel__c", "UP2GO_CPRM_BM__lkp_ExchangeRate__c", "pkl_BusinessModelArchetype__c", "pkl_BusinessModelType__c", "pkl_PricingModel__c", "pkl_RevenueModel__c", "lkp_SourceRecord__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__Service__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__Service__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET8" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "ftxt_IncludeInSOPPlusN__c", "Id", "Name", "CurrencyIsoCode", "UP2GO_CPRM_BM__mdr_Product__c", "UP2GO_CPRM_BM__dat_FirstDay__c", "fcur_Sales__c", "fcur_CostBBM__c", "fcur_EBITSOPPlus4__c", "fcur_EBIT__c", "fcur_SalesBBM__c", "fcur_SalesSOPPlus4__c", "fcur_TotalProductPrice__c", "fcur_SalesDOSPlus5__c", "ftxt_IncludeInDOSPlus5__c", "fcur_CSSSalesDevAmortizationAdder__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__ProductSchedule__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__ProductSchedule__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN0" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET8", "JOIN9" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "UP2GO_CPRM_BM__mdr_Product__c" ],
+        "rightQualifier" : "Parent",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN1" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET1", "JOIN16" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "UP2GO_CPRM_BM__mdr_Service__c" ],
+        "rightQualifier" : "Parent",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN2" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET4", "JOIN17" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "UP2GO_CPRM_BM__mdr_SaaS__c" ],
+        "rightQualifier" : "Parent",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FORMULA0" : {
+      "action" : "formula",
+      "sources" : [ "JOIN0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source",
+          "label" : "Source",
+          "formulaExpression" : "'Product'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES0" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA118" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Name",
+          "newProperties" : {
+            "label" : "Year",
+            "name" : "Year"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES3" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES0" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.UP2GO_CPRM_BM__lkp_SalesProject__c",
+          "newProperties" : {
+            "label" : "Sales Project",
+            "name" : "UP2GO_CPRM_BM__lkp_SalesProject__c"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES29" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES3" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.Name",
+          "newProperties" : {
+            "label" : "Name",
+            "name" : "Name"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES68" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA111" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBITSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Ebit (SOP+4)",
+            "name" : "EbitSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES69" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES68" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Sales (SOP+4)",
+            "name" : "SalesSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES70" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES69" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesDOSPlus5__c",
+          "newProperties" : {
+            "label" : "Sales (DOS+5)",
+            "name" : "SalesDOS5"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES89" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES70" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "newProperties" : {
+            "label" : "ConfigId",
+            "name" : "ConfigId"
+          }
+        } ]
+      }
+    },
+    "FORMULA27" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES123" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "TotalPriceFY",
+          "label" : "TotalPriceFY",
+          "formulaExpression" : "case \r\n    when substr(coalesce(\"Parent.UP2GO_CPRM_BM__dat_FirstScheduleDay__c\",'0000'), 1, 4) = substr(string(UP2GO_CPRM_BM__dat_FirstDay__c),1,4) then \r\n    fcur_TotalProductPrice__c\r\n    else\r\n    0\r\nend",
+          "precision" : 10,
+          "scale" : 2,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES97" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA27" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Name",
+          "newProperties" : {
+            "label" : "LineItem",
+            "name" : "LineItem"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES106" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES97" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBIT__c",
+          "newProperties" : {
+            "label" : "Ebit (Lifetime)",
+            "name" : "EbitLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES109" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES106" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SellingLegalEntity__c",
+          "newProperties" : {
+            "label" : "Selling Legal Entity",
+            "name" : "SellingLegalEntity"
+          }
+        } ]
+      }
+    },
+    "FORMULA61" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES109" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "DIV",
+          "label" : "Division",
+          "formulaExpression" : "\"Parent.UP2GO_CPRM_BM__ftxt_Level1__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA62" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA63" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN_ID",
+          "label" : "Part Number ",
+          "formulaExpression" : "\"Parent.ftxt_Level6__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA63" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA64" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "StatGr",
+          "label" : "Statistical Group ",
+          "formulaExpression" : "\"Parent.ftxt_Level5__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA64" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA65" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDSCL",
+          "label" : "Product Subclass",
+          "formulaExpression" : "\"Parent.ftxt_Level4__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA65" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA66" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDCL",
+          "label" : "Product Class",
+          "formulaExpression" : "\"Parent.ftxt_Level3__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA66" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA67" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModelType",
+          "label" : "Business Model Type ",
+          "formulaExpression" : "\"Parent.pkl_BusinessModelType__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA67" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES29" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BU",
+          "label" : "Business Unit ",
+          "formulaExpression" : "\"Parent.ftxt_Level2__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA68" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA61" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModelArcheType",
+          "label" : "Business Model ArcheType ",
+          "formulaExpression" : "\"Parent.pkl_BusinessModelArchetype__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA69" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA68" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "RevenueModel",
+          "label" : "Revenue Model ",
+          "formulaExpression" : "\"Parent.pkl_RevenueModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA70" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA69" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PricingModel",
+          "label" : "Pricing Model ",
+          "formulaExpression" : "\"Parent.pkl_PricingModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA96" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA70" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "SLEname",
+          "label" : "SLE name",
+          "formulaExpression" : "\"Parent.Account.Name\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA104" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA96" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FXT_LEGAL_ENTITY_NAME",
+          "label" : "Legal Entity Name Derived",
+          "formulaExpression" : "\"Parent.Account.txt_NameLegalEntity__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA111" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA62" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN",
+          "label" : "Part Name",
+          "formulaExpression" : "\"Parent.ftxt_Level6__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA118" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Line_Item_Type",
+          "label" : "Line_Item_Type",
+          "formulaExpression" : "'Product'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES123" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES89" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesBBM__c",
+          "newProperties" : {
+            "label" : "SalesLT",
+            "name" : "SalesLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES124" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA104" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_CSSSalesDevAmortizationAdder__c",
+          "newProperties" : {
+            "label" : "CSS Sales (Lifetime)",
+            "name" : "CSSSalesLT"
+          }
+        } ]
+      }
+    },
+    "FORMULA124" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES124" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PRD.Id",
+          "label" : "Product ID",
+          "formulaExpression" : "\"Parent.Id\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA125" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA124" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LineItemId",
+          "label" : "LineItemId",
+          "formulaExpression" : "\"Parent.Id\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA131" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA125" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FirstSchedule",
+          "label" : "FirstSchedule",
+          "formulaExpression" : "string(\"Parent.UP2GO_CPRM_BM__dat_FirstScheduleDay__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA132" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA131" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LastSchedule",
+          "label" : "LastSchedule",
+          "formulaExpression" : "string(\"Parent.UP2GO_CPRM_BM__dat_LastScheduleDay__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES128" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA132" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SourceRecord__c",
+          "newProperties" : {
+            "label" : "Source Record",
+            "name" : "lkp_SourceRecord__c"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES140" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES128" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SoldToAddress__c",
+          "newProperties" : {
+            "label" : "Sold To Address",
+            "name" : "SoldToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES141" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES140" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_BillToAddress__c",
+          "newProperties" : {
+            "label" : "Bill To Address",
+            "name" : "BillToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES142" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES141" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.ProdHierarchy.StatGr_ID",
+          "newProperties" : {
+            "label" : "Statistic Group",
+            "name" : "StatGr_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES143" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES142" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.ProdHierarchy.PlanningType",
+          "newProperties" : {
+            "label" : "Planning Type",
+            "name" : "PlanningType"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES144" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES143" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.ProdHierarchy.PDSCL_ID",
+          "newProperties" : {
+            "label" : "Product Subclass ID",
+            "name" : "PDSCL_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES145" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES144" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.ProdHierarchy.PDCL_ID",
+          "newProperties" : {
+            "label" : "Product Class ID",
+            "name" : "PDCL_ID"
+          }
+        } ]
+      }
+    },
+    "FORMULA1" : {
+      "action" : "formula",
+      "sources" : [ "JOIN1" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source",
+          "label" : "Source",
+          "formulaExpression" : "'Service'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES17" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA119" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Name",
+          "newProperties" : {
+            "label" : "Year",
+            "name" : "Year"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES63" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA56" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Sales (SOP+4)",
+            "name" : "SalesSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES64" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES63" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_Sales__c",
+          "newProperties" : {
+            "label" : "SalesLT",
+            "name" : "SalesLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES65" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES64" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesDOSPlus5__c",
+          "newProperties" : {
+            "label" : "Sales (DOS+5)",
+            "name" : "SalesDOS5"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES66" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES65" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBITSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Ebit (SOP+4)",
+            "name" : "EbitSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES67" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES66" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBIT__c",
+          "newProperties" : {
+            "label" : "EbitLT",
+            "name" : "EbitLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES84" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES67" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "newProperties" : {
+            "label" : "ConfigId",
+            "name" : "ConfigId"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES93" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES84" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_TotalOneTimeCosts__c",
+          "newProperties" : {
+            "label" : "CSS Costs (Lifetime)",
+            "name" : "CSSCostLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES94" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES93" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "cur_OneTimePayment__c",
+          "newProperties" : {
+            "label" : "CSS Sales (Lifetime)",
+            "name" : "CSSSalesLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES98" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES94" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.Name",
+          "newProperties" : {
+            "label" : "LineItem",
+            "name" : "LineItem"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES107" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES98" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "EbitLT",
+          "newProperties" : {
+            "label" : "Ebit (Lifetime)",
+            "name" : "EbitLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES110" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES107" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SellingLegalEntity__c",
+          "newProperties" : {
+            "label" : "Selling Legal Entity",
+            "name" : "SellingLegalEntity"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES115" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES110" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "CurrencyIsoCode",
+          "newProperties" : {
+            "label" : "CurrencyIsoCode",
+            "name" : "CurrencyIsoCode"
+          }
+        } ]
+      }
+    },
+    "FORMULA56" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA57" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN_ID",
+          "label" : "Part Number ",
+          "formulaExpression" : "\"Parent.SVCPDH.PN_ID\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA57" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA58" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "StatGr",
+          "label" : "Statistical Group ",
+          "formulaExpression" : "\"Parent.SVCPDH.StatGr\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA58" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA59" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDSCL",
+          "label" : "Product Subclass ",
+          "formulaExpression" : "\"Parent.SVCPDH.PDSCL\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA59" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA60" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDCL",
+          "label" : "Product Class",
+          "formulaExpression" : "\"Parent.SVCPDH.PDCL\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA60" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES17" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BU",
+          "label" : "Business Unit ",
+          "formulaExpression" : "\"Parent.SVCPDH.BU\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA77" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES115" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModel",
+          "label" : "Business Model ",
+          "formulaExpression" : "\"Parent.pkl_BusinessModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA78" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA77" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "RevenueModel",
+          "label" : "Revenue Model ",
+          "formulaExpression" : "\"Parent.pkl_RevenueModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA79" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA78" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PricingModel",
+          "label" : "Pricing Model ",
+          "formulaExpression" : "\"Parent.pkl_PricingModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA80" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA79" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModelArcheType",
+          "label" : "Business Model ArcheType ",
+          "formulaExpression" : "\"Parent.pkl_BusinessModelArchetype__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA97" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA80" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "SLEname",
+          "label" : "SLE name",
+          "formulaExpression" : "\"Parent.Account.Name\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA103" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA97" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModelType",
+          "label" : "Business Model Type ",
+          "formulaExpression" : "\"Parent.pkl_BusinessModelType__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA105" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA103" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FXT_LEGAL_ENTITY_NAME",
+          "label" : "Legal Entity Name Derived",
+          "formulaExpression" : "\"Parent.Account.txt_NameLegalEntity__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA112" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA105" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN",
+          "label" : "Part Name",
+          "formulaExpression" : "\"Parent.SVCPDH.PN\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA117" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA112" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "DIV",
+          "label" : "Division",
+          "formulaExpression" : "\"Parent.SVCPDH.DIV\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA119" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA1" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Line_Item_Type",
+          "label" : "Line_Item_Type",
+          "formulaExpression" : "'Service'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA126" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA117" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LineItemId",
+          "label" : "LineItemId",
+          "formulaExpression" : "\"Parent.Id\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA133" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA126" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FirstSchedule",
+          "label" : "FirstSchedule",
+          "formulaExpression" : "string(\"Parent.UP2GO_CPRM_BM__dat_FirstScheduleDay__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA134" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA133" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LastSchedule",
+          "label" : "LastSchedule",
+          "formulaExpression" : "string(\"Parent.UP2GO_CPRM_BM__dat_LastScheduleDay__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES127" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA134" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SourceRecord__c",
+          "newProperties" : {
+            "label" : "Source Record",
+            "name" : "lkp_SourceRecord__c"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES137" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES127" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_BillToAddress__c",
+          "newProperties" : {
+            "label" : "lkp_BillToAddress__c",
+            "name" : "BillToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES138" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES137" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SoldToAddress__c",
+          "newProperties" : {
+            "label" : "Sold To Address",
+            "name" : "SoldToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES139" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES138" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "BillToAddress",
+          "newProperties" : {
+            "label" : "Bill To Address",
+            "name" : "BillToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES146" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES139" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.SVCPDH.PDCL_ID",
+          "newProperties" : {
+            "label" : "Product Class ID",
+            "name" : "PDCL_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES147" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES146" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.SVCPDH.PDSCL_ID",
+          "newProperties" : {
+            "label" : "Product Subclass ID",
+            "name" : "PDSCL_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES148" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES147" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.SVCPDH.StatGr_ID",
+          "newProperties" : {
+            "label" : "Statistic Group",
+            "name" : "StatGr_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES149" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES148" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.SVCPDH.PlanningType",
+          "newProperties" : {
+            "label" : "Planning Type",
+            "name" : "PlanningType"
+          }
+        } ]
+      }
+    },
+    "FORMULA2" : {
+      "action" : "formula",
+      "sources" : [ "JOIN2" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source",
+          "label" : "Source",
+          "formulaExpression" : "'Service'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES19" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA2" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Name",
+          "newProperties" : {
+            "label" : "Year",
+            "name" : "Year"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES20" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES19" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.UP2GO_CPRM_BM__ftxt_Level1__c",
+          "newProperties" : {
+            "label" : "Division",
+            "name" : "UP2GO_CPRM_BM__ftxt_Level1__c"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES24" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES20" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.ftxt_Level6__c",
+          "newProperties" : {
+            "label" : "Part Number",
+            "name" : "ftxt_Level6__c"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES28" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA53" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.Name",
+          "newProperties" : {
+            "label" : "Name",
+            "name" : "Name"
+          }
+        } ]
+      }
+    },
+    "FORMULA21" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES58" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Primary_Config",
+          "label" : "Primary Config",
+          "formulaExpression" : "\"Parent.UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES56" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES28" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesDOSPlus5__c",
+          "newProperties" : {
+            "label" : "SalesDOS5",
+            "name" : "SalesDOS5"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES58" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES62" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "SalesLT",
+          "newProperties" : {
+            "label" : "SalesLT",
+            "name" : "SalesLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES59" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES56" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBITSOPPlus4__c",
+          "newProperties" : {
+            "label" : "EbitSOP4",
+            "name" : "EbitSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES60" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES59" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBIT__c",
+          "newProperties" : {
+            "label" : "Ebit (Lifetime)",
+            "name" : "EbitLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES61" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES60" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Sales (SOP+4)",
+            "name" : "SalesSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES62" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES61" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_Sales__c",
+          "newProperties" : {
+            "label" : "SalesLT",
+            "name" : "SalesLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES85" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA21" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "newProperties" : {
+            "label" : "ConfigId",
+            "name" : "ConfigId"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES99" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA52" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Name",
+          "newProperties" : {
+            "label" : "LineItem",
+            "name" : "LineItem"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES111" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES99" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SellingLegalEntity__c",
+          "newProperties" : {
+            "label" : "Selling Legal Entity",
+            "name" : "SellingLegalEntity"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES116" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA51" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "CurrencyIsoCode",
+          "newProperties" : {
+            "label" : "CurrencyIsoCode",
+            "name" : "CurrencyIsoCode"
+          }
+        } ]
+      }
+    },
+    "FORMULA50" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES116" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "DIV",
+          "label" : "Division ",
+          "formulaExpression" : "UP2GO_CPRM_BM__ftxt_Level1__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA51" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES111" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModelType",
+          "label" : "Business Model Type",
+          "formulaExpression" : "\"Parent.pkl_BusinessModelType__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA52" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES85" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN_ID",
+          "label" : "Part Number ",
+          "formulaExpression" : "ftxt_Level6__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA53" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA54" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDSCL",
+          "label" : "Product Subclass",
+          "formulaExpression" : "\"Parent.ftxt_Level4__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA54" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA55" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDCL",
+          "label" : "Product Class ",
+          "formulaExpression" : "\"Parent.ftxt_Level3__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA55" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES24" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BU",
+          "label" : "Business Unit ",
+          "formulaExpression" : "\"Parent.ftxt_Level2__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA83" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA102" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PricingModel",
+          "label" : "Pricing Model ",
+          "formulaExpression" : "\"Parent.pkl_PricingModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA84" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA83" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "RevenueModel",
+          "label" : "Revenue Model ",
+          "formulaExpression" : "\"Parent.pkl_RevenueModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA85" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA84" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModelArcheType",
+          "label" : "Business Model ArcheType ",
+          "formulaExpression" : "\"Parent.pkl_BusinessModelArchetype__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA98" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA85" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "SLEname",
+          "label" : "SLE name",
+          "formulaExpression" : "\"Parent.Account.Name\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA102" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA50" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "StatGr",
+          "label" : "Statistic Group ",
+          "formulaExpression" : "\"Parent.ftxt_Level5__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA106" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA98" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FXT_LEGAL_ENTITY_NAME",
+          "label" : "Legal Entity Name Derived",
+          "formulaExpression" : "\"Parent.Account.txt_NameLegalEntity__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA113" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA106" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN",
+          "label" : "Part Name",
+          "formulaExpression" : "ftxt_Level6__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA120" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA113" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Line_Item_Type",
+          "label" : "Line_Item_Type",
+          "formulaExpression" : "'SaaS'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA127" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA120" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LineItemId",
+          "label" : "LineItemId",
+          "formulaExpression" : "\"Parent.Id\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA135" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA127" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FirstSchedule",
+          "label" : "FirstSchedule",
+          "formulaExpression" : "string(\"Parent.UP2GO_CPRM_BM__dat_FirstScheduleDay__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA136" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA135" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LastSchedule",
+          "label" : "LastSchedule",
+          "formulaExpression" : "string(\"Parent.UP2GO_CPRM_BM__dat_LastScheduleDay__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES126" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA136" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SourceRecord__c",
+          "newProperties" : {
+            "label" : "Source Record",
+            "name" : "lkp_SourceRecord__c"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES135" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES126" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_BillToAddress__c",
+          "newProperties" : {
+            "label" : "Bill To Address",
+            "name" : "BillToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES136" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES135" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.lkp_SoldToAddress__c",
+          "newProperties" : {
+            "label" : "Sold To Address",
+            "name" : "SoldToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES150" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES136" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.SaasPDH.PDCL_ID",
+          "newProperties" : {
+            "label" : "Product Class ID",
+            "name" : "PDCL_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES151" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES150" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.SaasPDH.PDSCL_ID",
+          "newProperties" : {
+            "label" : "Product Subclass ID",
+            "name" : "PDSCL_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES152" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES151" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.SaasPDH.StatGr_ID",
+          "newProperties" : {
+            "label" : "Statistic Group",
+            "name" : "StatGr_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES153" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES152" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Parent.SaasPDH.PlanningType",
+          "newProperties" : {
+            "label" : "Planning Type",
+            "name" : "PlanningType"
+          }
+        } ]
+      }
+    },
+    "FORMULA3" : {
+      "action" : "formula",
+      "sources" : [ "JOIN25" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source",
+          "label" : "Source",
+          "formulaExpression" : "'Tooling'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA20" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA3" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Primary_Config",
+          "label" : "Primary Config",
+          "formulaExpression" : "\"Tooling.UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES72" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA33" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBITSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Ebit (SOP+4)",
+            "name" : "EbitSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES73" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES72" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Sales (SOP+4)",
+            "name" : "SalesSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES74" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES73" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_Sales__c",
+          "newProperties" : {
+            "label" : "SalesLT",
+            "name" : "SalesLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES75" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES74" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBIT__c",
+          "newProperties" : {
+            "label" : "Ebit (Lifetime)",
+            "name" : "EbitLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES76" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES75" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesDOSPlus5__c",
+          "newProperties" : {
+            "label" : "Sales (DOS+5)",
+            "name" : "SalesDOS5"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES86" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES76" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "newProperties" : {
+            "label" : "ConfigId",
+            "name" : "ConfigId"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES112" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES86" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "lkp_SellingLegalEntity__c",
+          "newProperties" : {
+            "label" : "Selling Legal Entity",
+            "name" : "SellingLegalEntity"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES117" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA35" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "CurrencyIsoCode",
+          "newProperties" : {
+            "label" : "CurrencyIsoCode",
+            "name" : "CurrencyIsoCode"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES120" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES117" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "ftxt_Year__c",
+          "newProperties" : {
+            "label" : "Year",
+            "name" : "Year"
+          }
+        } ]
+      }
+    },
+    "FORMULA29" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA20" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDCL",
+          "label" : "Product Class ",
+          "formulaExpression" : "coalesce(\"Tooling.ftxt_Level3__c\", '--')",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA30" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA31" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDSCL",
+          "label" : "Product Subclass",
+          "formulaExpression" : "coalesce(\"Tooling.ftxt_Level4__c\", '--')",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA31" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA29" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BU",
+          "label" : "Business Unit",
+          "formulaExpression" : "coalesce(\"Tooling.ftxt_Level2__c\", '--')",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA32" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA30" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "StatGr",
+          "label" : "Statistic Group",
+          "formulaExpression" : "\"Tooling.ftxt_Level5__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA33" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA32" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN_ID",
+          "label" : "Part Number ",
+          "formulaExpression" : "\"Tooling.ftxt_Level6__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA34" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES120" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "DIV",
+          "label" : "Division ",
+          "formulaExpression" : "\"Tooling.ftxt_Level1__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA35" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES112" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LineItem",
+          "label" : "Line Item",
+          "formulaExpression" : "Name",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA99" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA34" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "SLEname",
+          "label" : "SLE name",
+          "formulaExpression" : "\"Tooling.Account.Name\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA107" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA99" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FXT_LEGAL_ENTITY_NAME",
+          "label" : "Legal Entity Name Derived",
+          "formulaExpression" : "\"Tooling.Account.txt_NameLegalEntity__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA114" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA107" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN",
+          "label" : "Part Name",
+          "formulaExpression" : "\"Tooling.ftxt_Level6__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA121" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA114" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Line_Item_Type",
+          "label" : "Line_Item_Type",
+          "formulaExpression" : "'Tooling'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA128" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA121" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LineItemId",
+          "label" : "LineItemId",
+          "formulaExpression" : "Id",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES162" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES163" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Tooling.lkp_SoldToAddress__c",
+          "newProperties" : {
+            "label" : "Sold To Address",
+            "name" : "SoldToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES163" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA128" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Tooling.lkp_BillToAddress__c",
+          "newProperties" : {
+            "label" : "Bill To Address",
+            "name" : "BillToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES164" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES162" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Tooling.PreparedPr.PlanningType",
+          "newProperties" : {
+            "label" : "Planning Type",
+            "name" : "PlanningType"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES165" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES164" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Tooling.PreparedPr.StatGr_ID",
+          "newProperties" : {
+            "label" : "Statistic Group ID",
+            "name" : "StatGr_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES166" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES165" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Tooling.PreparedPr.PDSCL_ID",
+          "newProperties" : {
+            "label" : "Product Subclass ID",
+            "name" : "PDSCL_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES167" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES166" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Tooling.PreparedPr.PDCL_ID",
+          "newProperties" : {
+            "label" : "Product Class ID",
+            "name" : "PDCL_ID"
+          }
+        } ]
+      }
+    },
+    "FORMULA138" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES167" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FirstSchedule",
+          "label" : "FirstSchedule",
+          "formulaExpression" : "string(\"Tooling.UP2GO_CPRM_BM__dat_FirstScheduleDay__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA139" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA138" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LastSchedule",
+          "label" : "LastSchedule",
+          "formulaExpression" : "string(\"Tooling.UP2GO_CPRM_BM__dat_LastScheduleDay__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA4" : {
+      "action" : "formula",
+      "sources" : [ "JOIN19" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source",
+          "label" : "Source",
+          "formulaExpression" : "'Quick Saving'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA19" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA4" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Primary_Config",
+          "label" : "Primary Config",
+          "formulaExpression" : "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES50" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA19" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "lkp_SalesProject__c",
+          "newProperties" : {
+            "label" : "SPJId",
+            "name" : "lkp_SalesProject__c"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES77" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA46" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_CostSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Costs (SOP+4)",
+            "name" : "CostsSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES78" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES77" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_CostLifetime__c",
+          "newProperties" : {
+            "label" : "CostsLT",
+            "name" : "CostsLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES87" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES78" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "newProperties" : {
+            "label" : "ConfigId",
+            "name" : "ConfigId"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES101" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES87" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Name",
+          "newProperties" : {
+            "label" : "LineItem",
+            "name" : "LineItem"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES113" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES101" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "lkp_SellingLegalEntity__c",
+          "newProperties" : {
+            "label" : "Selling Legal Entity",
+            "name" : "SellingLegalEntity"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES118" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA45" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "CurrencyIsoCode",
+          "newProperties" : {
+            "label" : "CurrencyIsoCode",
+            "name" : "CurrencyIsoCode"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES121" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES118" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "ftxt_Year__c",
+          "newProperties" : {
+            "label" : "Year",
+            "name" : "Year"
+          }
+        } ]
+      }
+    },
+    "FORMULA43" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES121" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "DIV",
+          "label" : "Division ",
+          "formulaExpression" : "ftxt_Level1__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA44" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA43" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BU",
+          "label" : "Business Unit ",
+          "formulaExpression" : "UP2GO_CPRM_BM__ftxt_BusinessUnit__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA45" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES113" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Category",
+          "label" : "Category ",
+          "formulaExpression" : "UP2GO_CPRM_BM__pkl_Category__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA46" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA47" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN_ID",
+          "label" : "Part Number ",
+          "formulaExpression" : "ftxt_Level6__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA47" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA48" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDSCL",
+          "label" : "Product Subclass ",
+          "formulaExpression" : "ftxt_Level4__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA48" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA49" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDCL",
+          "label" : "Product Class ",
+          "formulaExpression" : "ftxt_Level3__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA49" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES50" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "StatGr",
+          "label" : "Statistic Group ",
+          "formulaExpression" : "ftxt_Level5__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA100" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA44" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "SLEname",
+          "label" : "SLE name",
+          "formulaExpression" : "\"Account.Name\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA108" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA100" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FXT_LEGAL_ENTITY_NAME",
+          "label" : "Legal Entity Name Derived",
+          "formulaExpression" : "\"Account.txt_NameLegalEntity__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA115" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA108" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN",
+          "label" : "Part Name",
+          "formulaExpression" : "ftxt_Level6__c",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA122" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA115" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Line_Item_Type",
+          "label" : "Line_Item_Type",
+          "formulaExpression" : "'Quick Saving'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA129" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA122" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LineItemId",
+          "label" : "LineItemId",
+          "formulaExpression" : "Id",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES131" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA129" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "lkp_SoldToAddress__c",
+          "newProperties" : {
+            "label" : "Sold To Address",
+            "name" : "SoldToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES132" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES131" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "lkp_BillToAddress__c",
+          "newProperties" : {
+            "label" : "Bill To Address",
+            "name" : "BillToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES158" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES132" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "PreparedPr.PDCL_ID",
+          "newProperties" : {
+            "label" : "Product Class ID",
+            "name" : "PDCL_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES159" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES158" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "PreparedPr.PDSCL_ID",
+          "newProperties" : {
+            "label" : "Product Subclass ID",
+            "name" : "PDSCL_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES160" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES159" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "PreparedPr.StatGr_ID",
+          "newProperties" : {
+            "label" : "Statistic Group",
+            "name" : "StatGr_ID"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES161" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES160" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "PreparedPr.PlanningType",
+          "newProperties" : {
+            "label" : "Planning Type",
+            "name" : "PlanningType"
+          }
+        } ]
+      }
+    },
+    "APPEND0" : {
+      "action" : "appendV2",
+      "sources" : [ "EDIT_ATTRIBUTES145", "EDIT_ATTRIBUTES149" ],
+      "parameters" : {
+        "fieldMappings" : [ ],
+        "allowImplicitDisjointSchema" : true
+      }
+    },
+    "APPEND1" : {
+      "action" : "appendV2",
+      "sources" : [ "APPEND0", "EDIT_ATTRIBUTES153" ],
+      "parameters" : {
+        "fieldMappings" : [ ],
+        "allowImplicitDisjointSchema" : true
+      }
+    },
+    "APPEND2" : {
+      "action" : "appendV2",
+      "sources" : [ "APPEND1", "FORMULA139" ],
+      "parameters" : {
+        "fieldMappings" : [ ],
+        "allowImplicitDisjointSchema" : true
+      }
+    },
+    "APPEND3" : {
+      "action" : "appendV2",
+      "sources" : [ "APPEND2", "EDIT_ATTRIBUTES161" ],
+      "parameters" : {
+        "fieldMappings" : [ ],
+        "allowImplicitDisjointSchema" : true
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "EDIT_ATTRIBUTES122" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "SPJ Line Items Live Data",
+          "name" : "SPJ_Line_Items_Live_Data",
+          "folderName" : "SPJ_Management_Dev"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET10" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "pkl_Status__c", "Id", "Name", "CurrencyIsoCode", "ftxt_AcquiCustomerRegion__c", "ftxt_PID__c", "ftxt_Acquisition_Customer_Name__c", "ftxt_Owner_Name__c", "ftxt_GlobalCustomerTeamName__c", "ftxt_ProjectStatus__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__SalesProject__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__SalesProject__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "EDIT_ATTRIBUTES33" : {
+      "action" : "schema",
+      "sources" : [ "JOIN13" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "SPJ.Name",
+          "newProperties" : {
+            "label" : "SPJ Name",
+            "name" : "SPJ.Name"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES34" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES33" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "SPJ.Id",
+          "newProperties" : {
+            "label" : "SPJ ID",
+            "name" : "SPJ.Id"
+          }
+        } ]
+      }
+    },
+    "FORMULA25" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES34" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PlanRel",
+          "label" : "PlanRel",
+          "formulaExpression" : "\"Config.pkl_PlanningRelevant__c\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA26" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA25" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "RevRel",
+          "label" : "Rev-Rel?",
+          "formulaExpression" : "\"Config.UP2GO_CPRM_BM__chk_IsRevenueRelevant__c\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES91" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA26" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "CorporateC.ConversionRate",
+          "newProperties" : {
+            "label" : "Exchange Rate",
+            "name" : "ExchangeRate"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES95" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES91" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Config.pkl_AcquisitionStatus__c",
+          "newProperties" : {
+            "label" : "Acquisition Status",
+            "name" : "AcquisitionStatus"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES96" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES95" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Config.pkl_AcquisitionChance__c",
+          "newProperties" : {
+            "label" : "Acquisition Chance",
+            "name" : "AcquisitionChance"
+          }
+        } ]
+      }
+    },
+    "FORMULA28" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES96" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "RR",
+          "label" : "RR",
+          "formulaExpression" : "case \r\n\twhen \"Config.UP2GO_CPRM_BM__chk_IsRevenueRelevant__c\" = 'true'\r\n\tthen 'Yes'\r\n\telse\r\n\t'No'\r\nend",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES108" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA137" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Config.SPJ.Id",
+          "newProperties" : {
+            "label" : "SPJId",
+            "name" : "SPJId"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES122" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES108" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Config.Name",
+          "newProperties" : {
+            "label" : "Configuration",
+            "name" : "Configuration"
+          }
+        } ]
+      }
+    },
+    "FORMULA137" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA28" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "DoSDate",
+          "label" : "DoSDate",
+          "formulaExpression" : "string(\"Config.dat_Award__c\")",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "JOIN9" : {
+      "action" : "join",
+      "sources" : [ "JOIN15", "LOAD_DATASET20" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "ProdHierarchy.Id" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "lkp_ReferencePart__c" ],
+        "rightQualifier" : "ProdHierarchy",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET14" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "chk_IsChangeOffer__c", "Id", "Name", "UP2GO_CPRM_BM__mdr_SalesProject__c", "UP2GO_CPRM_BM__chk_IsRevenueRelevant__c", "pkl_Status__c", "pkl_AcquisitionStatus__c", "dat_Award__c", "pkl_AcquisitionChance__c", "pkl_PlanningRelevant__c", "chk_Archived__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__Configuration__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__Configuration__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN10" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET14", "LOAD_DATASET10" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "UP2GO_CPRM_BM__mdr_SalesProject__c" ],
+        "rightQualifier" : "SPJ",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN11" : {
+      "action" : "join",
+      "sources" : [ "APPEND4", "JOIN10" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "ConfigId" ],
+        "rightQualifier" : "Config",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET15" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "lkp_BillToAddress__c", "lkp_SoldToCustomer__c", "lkp_SoldToAddress__c", "Id", "Name", "CurrencyIsoCode", "UP2GO_CPRM_BM__mdr_Product__c", "UP2GO_CPRM_BM__dat_FirstDay__c", "fcur_EBITSOPPlus4__c", "fcur_EBIT__c", "fcur_SalesDOSPlus5__c", "fcur_SalesSOPPlus4__c", "fcur_Sales__c", "ftxt_IncludeInDOSPlus5__c", "ftxt_IncludeInSOPPlusN__c", "lkp_SellingLegalEntity__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__Sample__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__Sample__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN12" : {
+      "action" : "join",
+      "sources" : [ "JOIN20", "JOIN15" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "UP2GO_CPRM_BM__mdr_Product__c" ],
+        "rightQualifier" : "PRDsample",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FORMULA23" : {
+      "action" : "formula",
+      "sources" : [ "JOIN12" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Source",
+          "label" : "Source",
+          "formulaExpression" : "'Sample'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA24" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA23" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Primary_Config",
+          "label" : "Primary Config",
+          "formulaExpression" : "\"PRDsample.UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c\"",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES79" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA24" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesDOSPlus5__c",
+          "newProperties" : {
+            "label" : "Sales (DOS+5)",
+            "name" : "SalesDOS5"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES80" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA38" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_SalesSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Sales (SOP+4)",
+            "name" : "SalesSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES81" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES80" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_Sales__c",
+          "newProperties" : {
+            "label" : "SalesLT",
+            "name" : "SalesLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES82" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES81" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBITSOPPlus4__c",
+          "newProperties" : {
+            "label" : "Ebit (SOP+4)",
+            "name" : "EbitSOP4"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES83" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES82" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "fcur_EBIT__c",
+          "newProperties" : {
+            "label" : "Ebit (Lifetime)",
+            "name" : "EbitLT"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES88" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES83" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "PRDsample.UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "newProperties" : {
+            "label" : "ConfigId",
+            "name" : "ConfigId"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES102" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES88" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Name",
+          "newProperties" : {
+            "label" : "LineItem",
+            "name" : "LineItem"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES114" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES102" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "lkp_SellingLegalEntity__c",
+          "newProperties" : {
+            "label" : "Selling Legal Entity",
+            "name" : "SellingLegalEntity"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES119" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA37" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "CurrencyIsoCode",
+          "newProperties" : {
+            "label" : "CurrencyIsoCode",
+            "name" : "CurrencyIsoCode"
+          }
+        } ]
+      }
+    },
+    "FORMULA36" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES119" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModelType",
+          "label" : "Business Model Type ",
+          "formulaExpression" : "\"PRDsample.pkl_BusinessModelType__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA37" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES114" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "DIV",
+          "label" : "Division ",
+          "formulaExpression" : "\"PRDsample.UP2GO_CPRM_BM__ftxt_Level1__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA38" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA39" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN_ID",
+          "label" : "Part Number ",
+          "formulaExpression" : "\"PRDsample.ftxt_Level6__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA39" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA40" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "StatGr",
+          "label" : "Statistic Group",
+          "formulaExpression" : "\"PRDsample.ftxt_Level5__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA40" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA41" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDSCL",
+          "label" : "Product Subclass ",
+          "formulaExpression" : "\"PRDsample.ftxt_Level4__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA41" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA42" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PDCL",
+          "label" : "Product Class ",
+          "formulaExpression" : "\"PRDsample.ftxt_Level3__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA42" : {
+      "action" : "formula",
+      "sources" : [ "EDIT_ATTRIBUTES79" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BU",
+          "label" : "Business Unit ",
+          "formulaExpression" : "\"PRDsample.ftxt_Level2__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA91" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA36" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "BusinessModelArcheType",
+          "label" : "Business Model ArcheType ",
+          "formulaExpression" : "\"PRDsample.pkl_BusinessModelArchetype__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA92" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA91" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PricingModel",
+          "label" : "Pricing Model ",
+          "formulaExpression" : "\"PRDsample.pkl_PricingModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA93" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA92" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "RevenueModel",
+          "label" : "Revenue Model ",
+          "formulaExpression" : "\"PRDsample.pkl_RevenueModel__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA101" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA93" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "SLEname",
+          "label" : "SLE name",
+          "formulaExpression" : "\"Account.Name\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA109" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA101" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "FXT_LEGAL_ENTITY_NAME",
+          "label" : "Legal Entity Name Derived",
+          "formulaExpression" : "\"Account.txt_NameLegalEntity__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "FORMULA116" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA109" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "PN",
+          "label" : "Part Name",
+          "formulaExpression" : "\"PRDsample.ftxt_Level6__c\"",
+          "precision" : 255,
+          "defaultValue" : "--"
+        } ]
+      }
+    },
+    "EXTRACT0" : {
+      "action" : "extractGrains",
+      "sources" : [ "FORMULA116" ],
+      "parameters" : {
+        "grainExtractions" : [ {
+          "source" : "UP2GO_CPRM_BM__dat_FirstDay__c",
+          "targets" : [ {
+            "name" : "Year",
+            "label" : "Year",
+            "grainType" : "YEAR"
+          } ]
+        } ]
+      }
+    },
+    "FORMULA123" : {
+      "action" : "formula",
+      "sources" : [ "EXTRACT0" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Line_Item_Type",
+          "label" : "Line_Item_Type",
+          "formulaExpression" : "'Sample'",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA130" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA123" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "LineItemId",
+          "label" : "LineItemId",
+          "formulaExpression" : "Id",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES125" : {
+      "action" : "schema",
+      "sources" : [ "FORMULA130" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "PRDsample.lkp_SourceRecord__c",
+          "newProperties" : {
+            "label" : "Source Record",
+            "name" : "lkp_SourceRecord__c"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES129" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES125" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "lkp_SoldToAddress__c",
+          "newProperties" : {
+            "label" : "Sold To Address",
+            "name" : "SoldToAddress"
+          }
+        } ]
+      }
+    },
+    "EDIT_ATTRIBUTES130" : {
+      "action" : "schema",
+      "sources" : [ "EDIT_ATTRIBUTES129" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "PRDsample.lkp_BillToAddress__c",
+          "newProperties" : {
+            "label" : "Bill To Address",
+            "name" : "BillToAddress"
+          }
+        } ]
+      }
+    },
+    "APPEND4" : {
+      "action" : "appendV2",
+      "sources" : [ "APPEND3", "EDIT_ATTRIBUTES130" ],
+      "parameters" : {
+        "fieldMappings" : [ ],
+        "allowImplicitDisjointSchema" : true
+      }
+    },
+    "LOAD_DATASET17" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "CurrencyDate", "IsoCode", "IsActive", "Id", "CurrencyType", "IsCorporate", "DecimalPlaces", "ConversionRate" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "CorporateCurrencies",
+          "name" : "CorporateCurrencies"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN13" : {
+      "action" : "join",
+      "sources" : [ "JOIN11", "LOAD_DATASET17" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "CurrencyIsoCode" ],
+        "rightQualifier" : "CorporateC",
+        "rightKeys" : [ "IsoCode" ]
+      }
+    },
+    "LOAD_DATASET19" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "AccountNumber", "Id", "Name", "txt_NameLegalEntity__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN15" : {
+      "action" : "join",
+      "sources" : [ "FILTER2", "LOAD_DATASET19" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "lkp_SellingLegalEntity__c" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN16" : {
+      "action" : "join",
+      "sources" : [ "JOIN21", "LOAD_DATASET19" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "lkp_SellingLegalEntity__c" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN17" : {
+      "action" : "join",
+      "sources" : [ "JOIN22", "LOAD_DATASET19" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "lkp_SellingLegalEntity__c" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN18" : {
+      "action" : "join",
+      "sources" : [ "JOIN23", "LOAD_DATASET19" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "lkp_SellingLegalEntity__c" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN19" : {
+      "action" : "join",
+      "sources" : [ "JOIN24", "LOAD_DATASET19" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "lkp_SellingLegalEntity__c" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN20" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET15", "LOAD_DATASET19" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "lkp_SellingLegalEntity__c" ],
+        "rightQualifier" : "Account",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "LOAD_DATASET20" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "PlanningType", "PDCL_ID", "StatGr", "PDSCL_ID", "PDSCL", "DIV", "PN_ID", "BU", "PDCL", "Id", "PN", "StatGr_ID" ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Prepared Product Hierarchy",
+          "name" : "Prepared_Product_Hierarchy"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN21" : {
+      "action" : "join",
+      "sources" : [ "FILTER3", "LOAD_DATASET20" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UP2GO_CPRM_BM__lkp_ServiceHierarchy__c" ],
+        "rightQualifier" : "SVCPDH",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN22" : {
+      "action" : "join",
+      "sources" : [ "FILTER4", "LOAD_DATASET20" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UP2GO_CPRM_BM__lkp_SoftwareHierarchy__c" ],
+        "rightQualifier" : "SaasPDH",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN23" : {
+      "action" : "join",
+      "sources" : [ "FILTER0", "LOAD_DATASET20" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UP2GO_CPRM_BM__lkp_ProductHierarchy__c" ],
+        "rightQualifier" : "PreparedPr",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN24" : {
+      "action" : "join",
+      "sources" : [ "FILTER1", "LOAD_DATASET20" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UP2GO_CPRM_BM__lkp_ProductHierarchy__c" ],
+        "rightQualifier" : "PreparedPr",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "FILTER0" : {
+      "action" : "filter",
+      "sources" : [ "EDIT_ATTRIBUTES168" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "operator" : "NOT",
+          "operands" : [ "--" ]
+        } ]
+      }
+    },
+    "FILTER1" : {
+      "action" : "filter",
+      "sources" : [ "LOAD_DATASET0" ],
+      "parameters" : {
+        "filterExpressions" : [ {
+          "type" : "TEXT",
+          "field" : "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c",
+          "operator" : "NOT",
+          "operands" : [ "--" ]
+        } ]
+      }
+    },
+    "FILTER2" : {
+      "action" : "sqlFilter",
+      "sources" : [ "LOAD_DATASET5" ],
+      "parameters" : {
+        "sqlFilterExpression" : "(UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c != '-' and UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c != '--')"
+      }
+    },
+    "FILTER3" : {
+      "action" : "sqlFilter",
+      "sources" : [ "LOAD_DATASET6" ],
+      "parameters" : {
+        "sqlFilterExpression" : "(UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c != '-' and UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c != '--')"
+      }
+    },
+    "FILTER4" : {
+      "action" : "sqlFilter",
+      "sources" : [ "LOAD_DATASET2" ],
+      "parameters" : {
+        "sqlFilterExpression" : "UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c != '-' and UP2GO_CPRM_BM__lkp_PrimaryConfiguration__c != '--'"
+      }
+    },
+    "LOAD_DATASET21" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "IsDeleted", "Name", "CurrencyIsoCode", "CreatedDate", "CreatedById", "LastModifiedDate", "LastModifiedById", "SystemModstamp", "UP2GO_CPRM_BM__mdr_Tooling__c", "UP2GO_CPRM_BM__cur_Cost__c", "UP2GO_CPRM_BM__cur_Price__c", "UP2GO_CPRM_BM__dat_FirstDay__c", "UP2GO_CPRM_BM__lkp_ExchangeRateYear__c", "UP2GO_CPRM_BM__lkp_FiscalYearInfo__c", "UP2GO_CPRM_BM__pkl_Granularity2__c", "UP2GO_CPRM_BM__txt_ParentId__c", "UP2GO_CPRM_BM__fcur_CostForScheduledFX__c", "UP2GO_CPRM_BM__fcur_FiscalYearRevenue__c", "UP2GO_CPRM_BM__fcur_PriceForScheduledFX__c", "fcur_PriceSchedFX__c", "ftxt_IncludeInDOSPlus5__c", "ftxt_IncludeInSOPPlusN__c", "num_Quantity__c", "txt_CalculationComments__c", "fcur_EBITSOPPlus4SchedFX__c", "fcur_EBITSOPPlus4__c", "fcur_EBITSchedFX__c", "fcur_EBIT__c", "fcur_SalesDOSPlus5__c", "fcur_SalesSOPPlus4SchedFX__c", "fcur_SalesSOPPlus4__c", "fcur_SalesSchedFX__c", "fcur_Sales__c", "fcur_TotalCost__c", "fcur_TotalPrice__c", "fpct_EBITPerPeriod__c", "fpct_EBITSOPPlus4__c" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UP2GO_CPRM_BM__ToolingSchedule__c",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UP2GO_CPRM_BM__ToolingSchedule__c"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "JOIN25" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET21", "JOIN18" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "UP2GO_CPRM_BM__mdr_Tooling__c" ],
+        "rightQualifier" : "Tooling",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "EDIT_ATTRIBUTES168" : {
+      "action" : "schema",
+      "sources" : [ "LOAD_DATASET3" ],
+      "parameters" : {
+        "fields" : [ {
+          "name" : "UP2GO_CPRM_BM__ftxt_Division__c",
+          "newProperties" : {
+            "label" : "Division",
+            "name" : "ftxt_Level1__c",
+            "typeProperties" : null
+          }
+        } ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET0" : {
+        "label" : "UP2GO_CPRM_BM__Credit__c",
+        "type" : "LOAD_DATASET",
+        "top" : 1372,
+        "left" : 250.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET1" : {
+        "label" : "UP2GO_CPRM_BM__ServiceSchedule__c",
+        "type" : "LOAD_DATASET",
+        "top" : 672,
+        "left" : 250.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET2" : {
+        "label" : "UP2GO_CPRM_BM__Saas__c",
+        "type" : "LOAD_DATASET",
+        "top" : 952,
+        "left" : 530.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET3" : {
+        "label" : "UP2GO_CPRM_BM__Tooling__c",
+        "type" : "LOAD_DATASET",
+        "top" : 1092,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET4" : {
+        "label" : "UP2GO_CPRM_BM__SaasSchedule__c",
+        "type" : "LOAD_DATASET",
+        "top" : 952,
+        "left" : 250.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET5" : {
+        "label" : "UP2GO_CPRM_BM__Product__c",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 250.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET6" : {
+        "label" : "UP2GO_CPRM_BM__Service__c",
+        "type" : "LOAD_DATASET",
+        "top" : 532,
+        "left" : 250.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET8" : {
+        "label" : "UP2GO_CPRM_BM__ProductSchedule__c",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN0" : {
+        "label" : "Product onto Product Schedules",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 532,
+        "left" : 530.2
+      },
+      "JOIN1" : {
+        "label" : "Service onto Service Schedules",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 812,
+        "left" : 530.2
+      },
+      "JOIN2" : {
+        "label" : "SaaS onto SaaS Schedules",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1092,
+        "left" : 530.2
+      },
+      "TRANSFORM0" : {
+        "label" : "Line Item Type",
+        "description" : "INFO: field API: Name  is renamed to Year and Name is used for product name to keep consistency among all line items",
+        "type" : "TRANSFORM",
+        "top" : 532,
+        "left" : 670.2,
+        "graph" : {
+          "FORMULA0" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES0" : {
+            "label" : "Schedule Name to \"Year\""
+          },
+          "EDIT_ATTRIBUTES3" : {
+            "label" : "Sales Project"
+          },
+          "EDIT_ATTRIBUTES29" : {
+            "label" : "Name"
+          },
+          "EDIT_ATTRIBUTES68" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES69" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES70" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES89" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA27" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES97" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES106" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES109" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA61" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA62" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA63" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA64" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA65" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA66" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA67" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA68" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA69" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA70" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA96" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA104" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA111" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA118" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES123" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES124" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA124" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA125" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA131" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA132" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES128" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES140" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES141" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES142" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES143" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES144" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES145" : {
+            "label" : "Edit Attributes"
+          }
+        },
+        "connectors" : [ {
+          "source" : "EDIT_ATTRIBUTES0",
+          "target" : "EDIT_ATTRIBUTES3"
+        }, {
+          "source" : "EDIT_ATTRIBUTES68",
+          "target" : "EDIT_ATTRIBUTES69"
+        }, {
+          "source" : "EDIT_ATTRIBUTES69",
+          "target" : "EDIT_ATTRIBUTES70"
+        }, {
+          "source" : "FORMULA27",
+          "target" : "EDIT_ATTRIBUTES97"
+        }, {
+          "source" : "EDIT_ATTRIBUTES97",
+          "target" : "EDIT_ATTRIBUTES106"
+        }, {
+          "source" : "EDIT_ATTRIBUTES106",
+          "target" : "EDIT_ATTRIBUTES109"
+        }, {
+          "source" : "EDIT_ATTRIBUTES109",
+          "target" : "FORMULA61"
+        }, {
+          "source" : "FORMULA63",
+          "target" : "FORMULA62"
+        }, {
+          "source" : "FORMULA64",
+          "target" : "FORMULA63"
+        }, {
+          "source" : "FORMULA65",
+          "target" : "FORMULA64"
+        }, {
+          "source" : "FORMULA66",
+          "target" : "FORMULA65"
+        }, {
+          "source" : "EDIT_ATTRIBUTES3",
+          "target" : "EDIT_ATTRIBUTES29"
+        }, {
+          "source" : "FORMULA67",
+          "target" : "FORMULA66"
+        }, {
+          "source" : "EDIT_ATTRIBUTES29",
+          "target" : "FORMULA67"
+        }, {
+          "source" : "FORMULA61",
+          "target" : "FORMULA68"
+        }, {
+          "source" : "FORMULA68",
+          "target" : "FORMULA69"
+        }, {
+          "source" : "FORMULA69",
+          "target" : "FORMULA70"
+        }, {
+          "source" : "FORMULA70",
+          "target" : "FORMULA96"
+        }, {
+          "source" : "FORMULA96",
+          "target" : "FORMULA104"
+        }, {
+          "source" : "FORMULA111",
+          "target" : "EDIT_ATTRIBUTES68"
+        }, {
+          "source" : "FORMULA62",
+          "target" : "FORMULA111"
+        }, {
+          "source" : "FORMULA118",
+          "target" : "EDIT_ATTRIBUTES0"
+        }, {
+          "source" : "FORMULA0",
+          "target" : "FORMULA118"
+        }, {
+          "source" : "EDIT_ATTRIBUTES70",
+          "target" : "EDIT_ATTRIBUTES89"
+        }, {
+          "source" : "EDIT_ATTRIBUTES123",
+          "target" : "FORMULA27"
+        }, {
+          "source" : "EDIT_ATTRIBUTES89",
+          "target" : "EDIT_ATTRIBUTES123"
+        }, {
+          "source" : "EDIT_ATTRIBUTES124",
+          "target" : "FORMULA124"
+        }, {
+          "source" : "FORMULA124",
+          "target" : "FORMULA125"
+        }, {
+          "source" : "FORMULA125",
+          "target" : "FORMULA131"
+        }, {
+          "source" : "FORMULA131",
+          "target" : "FORMULA132"
+        }, {
+          "source" : "FORMULA104",
+          "target" : "EDIT_ATTRIBUTES124"
+        }, {
+          "source" : "FORMULA132",
+          "target" : "EDIT_ATTRIBUTES128"
+        }, {
+          "source" : "EDIT_ATTRIBUTES128",
+          "target" : "EDIT_ATTRIBUTES140"
+        }, {
+          "source" : "EDIT_ATTRIBUTES140",
+          "target" : "EDIT_ATTRIBUTES141"
+        }, {
+          "source" : "EDIT_ATTRIBUTES141",
+          "target" : "EDIT_ATTRIBUTES142"
+        }, {
+          "source" : "EDIT_ATTRIBUTES142",
+          "target" : "EDIT_ATTRIBUTES143"
+        }, {
+          "source" : "EDIT_ATTRIBUTES143",
+          "target" : "EDIT_ATTRIBUTES144"
+        }, {
+          "source" : "EDIT_ATTRIBUTES144",
+          "target" : "EDIT_ATTRIBUTES145"
+        } ]
+      },
+      "TRANSFORM1" : {
+        "label" : "Line Item Type",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 812,
+        "left" : 670.2,
+        "graph" : {
+          "FORMULA1" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES17" : {
+            "label" : "Year"
+          },
+          "EDIT_ATTRIBUTES63" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES64" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES65" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES66" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES67" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES84" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES93" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES94" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES98" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES107" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES110" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES115" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA56" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA57" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA58" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA59" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA60" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA77" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA78" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA79" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA80" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA97" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA103" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA105" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA112" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA117" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA119" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA126" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA133" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA134" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES127" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES137" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES138" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES139" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES146" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES147" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES148" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES149" : {
+            "label" : "Edit Attributes"
+          }
+        },
+        "connectors" : [ {
+          "source" : "EDIT_ATTRIBUTES63",
+          "target" : "EDIT_ATTRIBUTES64"
+        }, {
+          "source" : "EDIT_ATTRIBUTES64",
+          "target" : "EDIT_ATTRIBUTES65"
+        }, {
+          "source" : "EDIT_ATTRIBUTES65",
+          "target" : "EDIT_ATTRIBUTES66"
+        }, {
+          "source" : "EDIT_ATTRIBUTES66",
+          "target" : "EDIT_ATTRIBUTES67"
+        }, {
+          "source" : "EDIT_ATTRIBUTES67",
+          "target" : "EDIT_ATTRIBUTES84"
+        }, {
+          "source" : "EDIT_ATTRIBUTES84",
+          "target" : "EDIT_ATTRIBUTES93"
+        }, {
+          "source" : "EDIT_ATTRIBUTES93",
+          "target" : "EDIT_ATTRIBUTES94"
+        }, {
+          "source" : "EDIT_ATTRIBUTES94",
+          "target" : "EDIT_ATTRIBUTES98"
+        }, {
+          "source" : "EDIT_ATTRIBUTES98",
+          "target" : "EDIT_ATTRIBUTES107"
+        }, {
+          "source" : "EDIT_ATTRIBUTES107",
+          "target" : "EDIT_ATTRIBUTES110"
+        }, {
+          "source" : "EDIT_ATTRIBUTES110",
+          "target" : "EDIT_ATTRIBUTES115"
+        }, {
+          "source" : "FORMULA56",
+          "target" : "EDIT_ATTRIBUTES63"
+        }, {
+          "source" : "FORMULA57",
+          "target" : "FORMULA56"
+        }, {
+          "source" : "FORMULA58",
+          "target" : "FORMULA57"
+        }, {
+          "source" : "FORMULA59",
+          "target" : "FORMULA58"
+        }, {
+          "source" : "FORMULA60",
+          "target" : "FORMULA59"
+        }, {
+          "source" : "EDIT_ATTRIBUTES17",
+          "target" : "FORMULA60"
+        }, {
+          "source" : "FORMULA77",
+          "target" : "FORMULA78"
+        }, {
+          "source" : "FORMULA78",
+          "target" : "FORMULA79"
+        }, {
+          "source" : "FORMULA79",
+          "target" : "FORMULA80"
+        }, {
+          "source" : "FORMULA80",
+          "target" : "FORMULA97"
+        }, {
+          "source" : "FORMULA97",
+          "target" : "FORMULA103"
+        }, {
+          "source" : "EDIT_ATTRIBUTES115",
+          "target" : "FORMULA77"
+        }, {
+          "source" : "FORMULA103",
+          "target" : "FORMULA105"
+        }, {
+          "source" : "FORMULA105",
+          "target" : "FORMULA112"
+        }, {
+          "source" : "FORMULA112",
+          "target" : "FORMULA117"
+        }, {
+          "source" : "FORMULA119",
+          "target" : "EDIT_ATTRIBUTES17"
+        }, {
+          "source" : "FORMULA1",
+          "target" : "FORMULA119"
+        }, {
+          "source" : "FORMULA117",
+          "target" : "FORMULA126"
+        }, {
+          "source" : "FORMULA126",
+          "target" : "FORMULA133"
+        }, {
+          "source" : "FORMULA133",
+          "target" : "FORMULA134"
+        }, {
+          "source" : "FORMULA134",
+          "target" : "EDIT_ATTRIBUTES127"
+        }, {
+          "source" : "EDIT_ATTRIBUTES127",
+          "target" : "EDIT_ATTRIBUTES137"
+        }, {
+          "source" : "EDIT_ATTRIBUTES137",
+          "target" : "EDIT_ATTRIBUTES138"
+        }, {
+          "source" : "EDIT_ATTRIBUTES138",
+          "target" : "EDIT_ATTRIBUTES139"
+        }, {
+          "source" : "EDIT_ATTRIBUTES139",
+          "target" : "EDIT_ATTRIBUTES146"
+        }, {
+          "source" : "EDIT_ATTRIBUTES146",
+          "target" : "EDIT_ATTRIBUTES147"
+        }, {
+          "source" : "EDIT_ATTRIBUTES147",
+          "target" : "EDIT_ATTRIBUTES148"
+        }, {
+          "source" : "EDIT_ATTRIBUTES148",
+          "target" : "EDIT_ATTRIBUTES149"
+        } ]
+      },
+      "TRANSFORM2" : {
+        "label" : "Line Item Type",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 1092,
+        "left" : 670.2,
+        "graph" : {
+          "FORMULA2" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES19" : {
+            "label" : "Year"
+          },
+          "EDIT_ATTRIBUTES20" : {
+            "label" : "Level 1"
+          },
+          "EDIT_ATTRIBUTES24" : {
+            "label" : "Level 6"
+          },
+          "EDIT_ATTRIBUTES28" : {
+            "label" : "Name"
+          },
+          "FORMULA21" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES56" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES58" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES59" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES60" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES61" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES62" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES85" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES99" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES111" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES116" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA50" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA51" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA52" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA53" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA54" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA55" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA83" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA84" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA85" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA98" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA102" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA106" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA113" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA120" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA127" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA135" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA136" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES126" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES135" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES136" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES150" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES151" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES152" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES153" : {
+            "label" : "Edit Attributes"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA2",
+          "target" : "EDIT_ATTRIBUTES19"
+        }, {
+          "source" : "EDIT_ATTRIBUTES19",
+          "target" : "EDIT_ATTRIBUTES20"
+        }, {
+          "source" : "EDIT_ATTRIBUTES28",
+          "target" : "EDIT_ATTRIBUTES56"
+        }, {
+          "source" : "EDIT_ATTRIBUTES58",
+          "target" : "FORMULA21"
+        }, {
+          "source" : "EDIT_ATTRIBUTES56",
+          "target" : "EDIT_ATTRIBUTES59"
+        }, {
+          "source" : "EDIT_ATTRIBUTES59",
+          "target" : "EDIT_ATTRIBUTES60"
+        }, {
+          "source" : "EDIT_ATTRIBUTES60",
+          "target" : "EDIT_ATTRIBUTES61"
+        }, {
+          "source" : "EDIT_ATTRIBUTES61",
+          "target" : "EDIT_ATTRIBUTES62"
+        }, {
+          "source" : "EDIT_ATTRIBUTES62",
+          "target" : "EDIT_ATTRIBUTES58"
+        }, {
+          "source" : "EDIT_ATTRIBUTES116",
+          "target" : "FORMULA50"
+        }, {
+          "source" : "EDIT_ATTRIBUTES99",
+          "target" : "EDIT_ATTRIBUTES111"
+        }, {
+          "source" : "FORMULA51",
+          "target" : "EDIT_ATTRIBUTES116"
+        }, {
+          "source" : "EDIT_ATTRIBUTES111",
+          "target" : "FORMULA51"
+        }, {
+          "source" : "FORMULA21",
+          "target" : "EDIT_ATTRIBUTES85"
+        }, {
+          "source" : "FORMULA52",
+          "target" : "EDIT_ATTRIBUTES99"
+        }, {
+          "source" : "EDIT_ATTRIBUTES85",
+          "target" : "FORMULA52"
+        }, {
+          "source" : "FORMULA53",
+          "target" : "EDIT_ATTRIBUTES28"
+        }, {
+          "source" : "FORMULA54",
+          "target" : "FORMULA53"
+        }, {
+          "source" : "EDIT_ATTRIBUTES20",
+          "target" : "EDIT_ATTRIBUTES24"
+        }, {
+          "source" : "FORMULA55",
+          "target" : "FORMULA54"
+        }, {
+          "source" : "EDIT_ATTRIBUTES24",
+          "target" : "FORMULA55"
+        }, {
+          "source" : "FORMULA83",
+          "target" : "FORMULA84"
+        }, {
+          "source" : "FORMULA84",
+          "target" : "FORMULA85"
+        }, {
+          "source" : "FORMULA85",
+          "target" : "FORMULA98"
+        }, {
+          "source" : "FORMULA50",
+          "target" : "FORMULA102"
+        }, {
+          "source" : "FORMULA102",
+          "target" : "FORMULA83"
+        }, {
+          "source" : "FORMULA98",
+          "target" : "FORMULA106"
+        }, {
+          "source" : "FORMULA106",
+          "target" : "FORMULA113"
+        }, {
+          "source" : "FORMULA113",
+          "target" : "FORMULA120"
+        }, {
+          "source" : "FORMULA120",
+          "target" : "FORMULA127"
+        }, {
+          "source" : "FORMULA127",
+          "target" : "FORMULA135"
+        }, {
+          "source" : "FORMULA135",
+          "target" : "FORMULA136"
+        }, {
+          "source" : "FORMULA136",
+          "target" : "EDIT_ATTRIBUTES126"
+        }, {
+          "source" : "EDIT_ATTRIBUTES126",
+          "target" : "EDIT_ATTRIBUTES135"
+        }, {
+          "source" : "EDIT_ATTRIBUTES135",
+          "target" : "EDIT_ATTRIBUTES136"
+        }, {
+          "source" : "EDIT_ATTRIBUTES136",
+          "target" : "EDIT_ATTRIBUTES150"
+        }, {
+          "source" : "EDIT_ATTRIBUTES150",
+          "target" : "EDIT_ATTRIBUTES151"
+        }, {
+          "source" : "EDIT_ATTRIBUTES151",
+          "target" : "EDIT_ATTRIBUTES152"
+        }, {
+          "source" : "EDIT_ATTRIBUTES152",
+          "target" : "EDIT_ATTRIBUTES153"
+        } ]
+      },
+      "TRANSFORM3" : {
+        "label" : "Line Item Type",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 1232,
+        "left" : 670.2,
+        "graph" : {
+          "FORMULA3" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA20" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES72" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES73" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES74" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES75" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES76" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES86" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES112" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES117" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES120" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA29" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA30" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA31" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA32" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA33" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA34" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA35" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA99" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA107" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA114" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA121" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA128" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES162" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES163" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES164" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES165" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES166" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES167" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA138" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA139" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA3",
+          "target" : "FORMULA20"
+        }, {
+          "source" : "EDIT_ATTRIBUTES72",
+          "target" : "EDIT_ATTRIBUTES73"
+        }, {
+          "source" : "EDIT_ATTRIBUTES73",
+          "target" : "EDIT_ATTRIBUTES74"
+        }, {
+          "source" : "EDIT_ATTRIBUTES74",
+          "target" : "EDIT_ATTRIBUTES75"
+        }, {
+          "source" : "EDIT_ATTRIBUTES75",
+          "target" : "EDIT_ATTRIBUTES76"
+        }, {
+          "source" : "EDIT_ATTRIBUTES76",
+          "target" : "EDIT_ATTRIBUTES86"
+        }, {
+          "source" : "EDIT_ATTRIBUTES117",
+          "target" : "EDIT_ATTRIBUTES120"
+        }, {
+          "source" : "FORMULA20",
+          "target" : "FORMULA29"
+        }, {
+          "source" : "FORMULA31",
+          "target" : "FORMULA30"
+        }, {
+          "source" : "FORMULA29",
+          "target" : "FORMULA31"
+        }, {
+          "source" : "FORMULA30",
+          "target" : "FORMULA32"
+        }, {
+          "source" : "FORMULA33",
+          "target" : "EDIT_ATTRIBUTES72"
+        }, {
+          "source" : "FORMULA32",
+          "target" : "FORMULA33"
+        }, {
+          "source" : "EDIT_ATTRIBUTES120",
+          "target" : "FORMULA34"
+        }, {
+          "source" : "EDIT_ATTRIBUTES86",
+          "target" : "EDIT_ATTRIBUTES112"
+        }, {
+          "source" : "FORMULA35",
+          "target" : "EDIT_ATTRIBUTES117"
+        }, {
+          "source" : "EDIT_ATTRIBUTES112",
+          "target" : "FORMULA35"
+        }, {
+          "source" : "FORMULA34",
+          "target" : "FORMULA99"
+        }, {
+          "source" : "FORMULA99",
+          "target" : "FORMULA107"
+        }, {
+          "source" : "FORMULA107",
+          "target" : "FORMULA114"
+        }, {
+          "source" : "FORMULA114",
+          "target" : "FORMULA121"
+        }, {
+          "source" : "FORMULA121",
+          "target" : "FORMULA128"
+        }, {
+          "source" : "FORMULA128",
+          "target" : "EDIT_ATTRIBUTES163"
+        }, {
+          "source" : "EDIT_ATTRIBUTES163",
+          "target" : "EDIT_ATTRIBUTES162"
+        }, {
+          "source" : "EDIT_ATTRIBUTES166",
+          "target" : "EDIT_ATTRIBUTES167"
+        }, {
+          "source" : "EDIT_ATTRIBUTES165",
+          "target" : "EDIT_ATTRIBUTES166"
+        }, {
+          "source" : "EDIT_ATTRIBUTES164",
+          "target" : "EDIT_ATTRIBUTES165"
+        }, {
+          "source" : "EDIT_ATTRIBUTES162",
+          "target" : "EDIT_ATTRIBUTES164"
+        }, {
+          "source" : "EDIT_ATTRIBUTES167",
+          "target" : "FORMULA138"
+        }, {
+          "source" : "FORMULA138",
+          "target" : "FORMULA139"
+        } ]
+      },
+      "TRANSFORM4" : {
+        "label" : "Line Item Type",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 1372,
+        "left" : 670.2,
+        "graph" : {
+          "FORMULA4" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA19" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES50" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES77" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES78" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES87" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES101" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES113" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES118" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES121" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA43" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA44" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA45" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA46" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA47" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA48" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA49" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA100" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA108" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA115" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA122" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA129" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES131" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES132" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES158" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES159" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES160" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES161" : {
+            "label" : "Edit Attributes"
+          }
+        },
+        "connectors" : [ {
+          "source" : "EDIT_ATTRIBUTES77",
+          "target" : "EDIT_ATTRIBUTES78"
+        }, {
+          "source" : "EDIT_ATTRIBUTES78",
+          "target" : "EDIT_ATTRIBUTES87"
+        }, {
+          "source" : "EDIT_ATTRIBUTES87",
+          "target" : "EDIT_ATTRIBUTES101"
+        }, {
+          "source" : "EDIT_ATTRIBUTES118",
+          "target" : "EDIT_ATTRIBUTES121"
+        }, {
+          "source" : "EDIT_ATTRIBUTES121",
+          "target" : "FORMULA43"
+        }, {
+          "source" : "FORMULA43",
+          "target" : "FORMULA44"
+        }, {
+          "source" : "EDIT_ATTRIBUTES101",
+          "target" : "EDIT_ATTRIBUTES113"
+        }, {
+          "source" : "FORMULA45",
+          "target" : "EDIT_ATTRIBUTES118"
+        }, {
+          "source" : "EDIT_ATTRIBUTES113",
+          "target" : "FORMULA45"
+        }, {
+          "source" : "FORMULA46",
+          "target" : "EDIT_ATTRIBUTES77"
+        }, {
+          "source" : "FORMULA47",
+          "target" : "FORMULA46"
+        }, {
+          "source" : "FORMULA48",
+          "target" : "FORMULA47"
+        }, {
+          "source" : "FORMULA19",
+          "target" : "EDIT_ATTRIBUTES50"
+        }, {
+          "source" : "FORMULA49",
+          "target" : "FORMULA48"
+        }, {
+          "source" : "EDIT_ATTRIBUTES50",
+          "target" : "FORMULA49"
+        }, {
+          "source" : "FORMULA44",
+          "target" : "FORMULA100"
+        }, {
+          "source" : "FORMULA100",
+          "target" : "FORMULA108"
+        }, {
+          "source" : "FORMULA108",
+          "target" : "FORMULA115"
+        }, {
+          "source" : "FORMULA115",
+          "target" : "FORMULA122"
+        }, {
+          "source" : "FORMULA4",
+          "target" : "FORMULA19"
+        }, {
+          "source" : "FORMULA122",
+          "target" : "FORMULA129"
+        }, {
+          "source" : "FORMULA129",
+          "target" : "EDIT_ATTRIBUTES131"
+        }, {
+          "source" : "EDIT_ATTRIBUTES131",
+          "target" : "EDIT_ATTRIBUTES132"
+        }, {
+          "source" : "EDIT_ATTRIBUTES132",
+          "target" : "EDIT_ATTRIBUTES158"
+        }, {
+          "source" : "EDIT_ATTRIBUTES158",
+          "target" : "EDIT_ATTRIBUTES159"
+        }, {
+          "source" : "EDIT_ATTRIBUTES159",
+          "target" : "EDIT_ATTRIBUTES160"
+        }, {
+          "source" : "EDIT_ATTRIBUTES160",
+          "target" : "EDIT_ATTRIBUTES161"
+        } ]
+      },
+      "APPEND0" : {
+        "label" : "Append Products and Services",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 532,
+        "left" : 810.2
+      },
+      "APPEND1" : {
+        "label" : "Append SaaS with All",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 532,
+        "left" : 950.2
+      },
+      "APPEND2" : {
+        "label" : "Append Tooling with All",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 532,
+        "left" : 1090.2
+      },
+      "APPEND3" : {
+        "label" : "Append Quick Savings with All",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 532,
+        "left" : 1230.2
+      },
+      "OUTPUT0" : {
+        "label" : "SPJ Line Items Live Dataset",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 532,
+        "left" : 2490.2
+      },
+      "LOAD_DATASET10" : {
+        "label" : "UP2GO_CPRM_BM__SalesProject__c",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 1510.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "TRANSFORM6" : {
+        "label" : "Label updates",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 392,
+        "left" : 2350.2,
+        "graph" : {
+          "EDIT_ATTRIBUTES33" : {
+            "label" : "SPJ Name"
+          },
+          "EDIT_ATTRIBUTES34" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA25" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA26" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES91" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES95" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES96" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA28" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES108" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES122" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA137" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ {
+          "source" : "EDIT_ATTRIBUTES33",
+          "target" : "EDIT_ATTRIBUTES34"
+        }, {
+          "source" : "EDIT_ATTRIBUTES34",
+          "target" : "FORMULA25"
+        }, {
+          "source" : "FORMULA25",
+          "target" : "FORMULA26"
+        }, {
+          "source" : "EDIT_ATTRIBUTES91",
+          "target" : "EDIT_ATTRIBUTES95"
+        }, {
+          "source" : "EDIT_ATTRIBUTES95",
+          "target" : "EDIT_ATTRIBUTES96"
+        }, {
+          "source" : "FORMULA26",
+          "target" : "EDIT_ATTRIBUTES91"
+        }, {
+          "source" : "EDIT_ATTRIBUTES108",
+          "target" : "EDIT_ATTRIBUTES122"
+        }, {
+          "source" : "EDIT_ATTRIBUTES96",
+          "target" : "FORMULA28"
+        }, {
+          "source" : "FORMULA137",
+          "target" : "EDIT_ATTRIBUTES108"
+        }, {
+          "source" : "FORMULA28",
+          "target" : "FORMULA137"
+        } ]
+      },
+      "JOIN9" : {
+        "label" : "Product Hierarchy onto Product",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 252,
+        "left" : 390.2
+      },
+      "LOAD_DATASET14" : {
+        "label" : "UP2GO_CPRM_BM__Configuration__c",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 1510.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN10" : {
+        "label" : "Join 10",
+        "type" : "JOIN",
+        "top" : 252,
+        "left" : 1930.2
+      },
+      "JOIN11" : {
+        "label" : "Join 11",
+        "type" : "JOIN",
+        "top" : 252,
+        "left" : 2070.2
+      },
+      "LOAD_DATASET15" : {
+        "label" : "UP2GO_CPRM_BM__Sample__c",
+        "type" : "LOAD_DATASET",
+        "top" : 1512,
+        "left" : 250.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN12" : {
+        "label" : "Join 12",
+        "type" : "JOIN",
+        "top" : 672,
+        "left" : 390.2
+      },
+      "TRANSFORM7" : {
+        "label" : "Line Item Type",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 1512,
+        "left" : 670.2,
+        "graph" : {
+          "FORMULA23" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA24" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES79" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES80" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES81" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES82" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES83" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES88" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES102" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES114" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES119" : {
+            "label" : "Edit Attributes"
+          },
+          "FORMULA36" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA37" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA38" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA39" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA40" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA41" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA42" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA91" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA92" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA93" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA101" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA109" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA116" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EXTRACT0" : {
+            "label" : "Extract Date Component"
+          },
+          "FORMULA123" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "FORMULA130" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          },
+          "EDIT_ATTRIBUTES125" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES129" : {
+            "label" : "Edit Attributes"
+          },
+          "EDIT_ATTRIBUTES130" : {
+            "label" : "Edit Attributes"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA23",
+          "target" : "FORMULA24"
+        }, {
+          "source" : "EDIT_ATTRIBUTES80",
+          "target" : "EDIT_ATTRIBUTES81"
+        }, {
+          "source" : "EDIT_ATTRIBUTES81",
+          "target" : "EDIT_ATTRIBUTES82"
+        }, {
+          "source" : "EDIT_ATTRIBUTES82",
+          "target" : "EDIT_ATTRIBUTES83"
+        }, {
+          "source" : "EDIT_ATTRIBUTES83",
+          "target" : "EDIT_ATTRIBUTES88"
+        }, {
+          "source" : "EDIT_ATTRIBUTES88",
+          "target" : "EDIT_ATTRIBUTES102"
+        }, {
+          "source" : "EDIT_ATTRIBUTES119",
+          "target" : "FORMULA36"
+        }, {
+          "source" : "EDIT_ATTRIBUTES102",
+          "target" : "EDIT_ATTRIBUTES114"
+        }, {
+          "source" : "FORMULA37",
+          "target" : "EDIT_ATTRIBUTES119"
+        }, {
+          "source" : "EDIT_ATTRIBUTES114",
+          "target" : "FORMULA37"
+        }, {
+          "source" : "FORMULA38",
+          "target" : "EDIT_ATTRIBUTES80"
+        }, {
+          "source" : "FORMULA39",
+          "target" : "FORMULA38"
+        }, {
+          "source" : "FORMULA40",
+          "target" : "FORMULA39"
+        }, {
+          "source" : "FORMULA41",
+          "target" : "FORMULA40"
+        }, {
+          "source" : "FORMULA24",
+          "target" : "EDIT_ATTRIBUTES79"
+        }, {
+          "source" : "FORMULA42",
+          "target" : "FORMULA41"
+        }, {
+          "source" : "EDIT_ATTRIBUTES79",
+          "target" : "FORMULA42"
+        }, {
+          "source" : "FORMULA91",
+          "target" : "FORMULA92"
+        }, {
+          "source" : "FORMULA92",
+          "target" : "FORMULA93"
+        }, {
+          "source" : "FORMULA93",
+          "target" : "FORMULA101"
+        }, {
+          "source" : "FORMULA36",
+          "target" : "FORMULA91"
+        }, {
+          "source" : "FORMULA101",
+          "target" : "FORMULA109"
+        }, {
+          "source" : "FORMULA109",
+          "target" : "FORMULA116"
+        }, {
+          "source" : "FORMULA116",
+          "target" : "EXTRACT0"
+        }, {
+          "source" : "EXTRACT0",
+          "target" : "FORMULA123"
+        }, {
+          "source" : "FORMULA123",
+          "target" : "FORMULA130"
+        }, {
+          "source" : "FORMULA130",
+          "target" : "EDIT_ATTRIBUTES125"
+        }, {
+          "source" : "EDIT_ATTRIBUTES125",
+          "target" : "EDIT_ATTRIBUTES129"
+        }, {
+          "source" : "EDIT_ATTRIBUTES129",
+          "target" : "EDIT_ATTRIBUTES130"
+        } ]
+      },
+      "APPEND4" : {
+        "label" : "Append Samples with All",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 532,
+        "left" : 1370.2
+      },
+      "LOAD_DATASET17" : {
+        "label" : "CorporateCurrencies",
+        "type" : "LOAD_DATASET",
+        "top" : 672,
+        "left" : 2070.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN13" : {
+        "label" : "Join 13",
+        "type" : "JOIN",
+        "top" : 252,
+        "left" : 2350.2
+      },
+      "LOAD_DATASET19" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 812,
+        "left" : 250.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN15" : {
+        "label" : "Join Account Prd",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 390.2
+      },
+      "JOIN16" : {
+        "label" : "Join Account Service",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 672,
+        "left" : 670.2
+      },
+      "JOIN17" : {
+        "label" : "Join Account Saas",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 952.1,
+        "left" : 812
+      },
+      "JOIN18" : {
+        "label" : "Join Account Tooling",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1232,
+        "left" : 532
+      },
+      "JOIN19" : {
+        "label" : "Join Account QS",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1372,
+        "left" : 530.2
+      },
+      "JOIN20" : {
+        "label" : "Join Account Sample",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1512,
+        "left" : 390.2
+      },
+      "LOAD_DATASET20" : {
+        "label" : "Prepared Product Hierarchy",
+        "type" : "LOAD_DATASET",
+        "top" : 112,
+        "left" : 250.2,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN21" : {
+        "label" : "Product Hierarchy onto Service",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 252,
+        "left" : 1090.2
+      },
+      "JOIN22" : {
+        "label" : "Product Hierarchy onto Saas",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 950.2
+      },
+      "JOIN23" : {
+        "label" : "Product Hierarchy on Tooling",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 252,
+        "left" : 950.2
+      },
+      "JOIN24" : {
+        "label" : "Product Hierarchy onto QS",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 392,
+        "left" : 950.2
+      },
+      "FILTER0" : {
+        "label" : "Filter 0",
+        "type" : "FILTER",
+        "top" : 1092,
+        "left" : 392
+      },
+      "FILTER1" : {
+        "label" : "Filter 1",
+        "type" : "FILTER",
+        "top" : 1372,
+        "left" : 390.2
+      },
+      "FILTER2" : {
+        "label" : "Filter 2",
+        "type" : "FILTER",
+        "top" : 392,
+        "left" : 250.2
+      },
+      "FILTER3" : {
+        "label" : "Filter 3",
+        "type" : "FILTER",
+        "top" : 532,
+        "left" : 392
+      },
+      "FILTER4" : {
+        "label" : "Filter 4",
+        "type" : "FILTER",
+        "top" : 952,
+        "left" : 672
+      },
+      "LOAD_DATASET21" : {
+        "label" : "UP2GO_CPRM_BM__ToolingSchedule__c",
+        "type" : "LOAD_DATASET",
+        "top" : 1232,
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN25" : {
+        "label" : "Tooling onto Tooling schedules",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1232,
+        "left" : 392
+      },
+      "TRANSFORM8" : {
+        "label" : "Transform 8",
+        "type" : "TRANSFORM",
+        "top" : 1092,
+        "left" : 252,
+        "graph" : {
+          "EDIT_ATTRIBUTES168" : {
+            "label" : "Edit Attributes"
+          }
+        },
+        "connectors" : [ ]
+      }
+    },
+    "connectors" : [ {
+      "source" : "FILTER0",
+      "target" : "JOIN23"
+    }, {
+      "source" : "LOAD_DATASET14",
+      "target" : "JOIN10"
+    }, {
+      "source" : "JOIN21",
+      "target" : "JOIN16"
+    }, {
+      "source" : "JOIN11",
+      "target" : "JOIN13"
+    }, {
+      "source" : "LOAD_DATASET8",
+      "target" : "JOIN0"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "JOIN1"
+    }, {
+      "source" : "JOIN16",
+      "target" : "JOIN1"
+    }, {
+      "source" : "LOAD_DATASET4",
+      "target" : "JOIN2"
+    }, {
+      "source" : "JOIN0",
+      "target" : "TRANSFORM0"
+    }, {
+      "source" : "JOIN1",
+      "target" : "TRANSFORM1"
+    }, {
+      "source" : "JOIN2",
+      "target" : "TRANSFORM2"
+    }, {
+      "source" : "JOIN19",
+      "target" : "TRANSFORM4"
+    }, {
+      "source" : "TRANSFORM0",
+      "target" : "APPEND0"
+    }, {
+      "source" : "TRANSFORM1",
+      "target" : "APPEND0"
+    }, {
+      "source" : "APPEND0",
+      "target" : "APPEND1"
+    }, {
+      "source" : "TRANSFORM2",
+      "target" : "APPEND1"
+    }, {
+      "source" : "APPEND1",
+      "target" : "APPEND2"
+    }, {
+      "source" : "TRANSFORM3",
+      "target" : "APPEND2"
+    }, {
+      "source" : "APPEND2",
+      "target" : "APPEND3"
+    }, {
+      "source" : "TRANSFORM4",
+      "target" : "APPEND3"
+    }, {
+      "source" : "JOIN15",
+      "target" : "JOIN9"
+    }, {
+      "source" : "JOIN9",
+      "target" : "JOIN0"
+    }, {
+      "source" : "LOAD_DATASET10",
+      "target" : "JOIN10"
+    }, {
+      "source" : "APPEND4",
+      "target" : "JOIN11"
+    }, {
+      "source" : "JOIN10",
+      "target" : "JOIN11"
+    }, {
+      "source" : "JOIN20",
+      "target" : "JOIN12"
+    }, {
+      "source" : "JOIN15",
+      "target" : "JOIN12"
+    }, {
+      "source" : "JOIN12",
+      "target" : "TRANSFORM7"
+    }, {
+      "source" : "APPEND3",
+      "target" : "APPEND4"
+    }, {
+      "source" : "TRANSFORM7",
+      "target" : "APPEND4"
+    }, {
+      "source" : "LOAD_DATASET17",
+      "target" : "JOIN13"
+    }, {
+      "source" : "JOIN13",
+      "target" : "TRANSFORM6"
+    }, {
+      "source" : "TRANSFORM6",
+      "target" : "OUTPUT0"
+    }, {
+      "source" : "JOIN17",
+      "target" : "JOIN2"
+    }, {
+      "source" : "FILTER2",
+      "target" : "JOIN15"
+    }, {
+      "source" : "LOAD_DATASET19",
+      "target" : "JOIN15"
+    }, {
+      "source" : "LOAD_DATASET19",
+      "target" : "JOIN16"
+    }, {
+      "source" : "JOIN22",
+      "target" : "JOIN17"
+    }, {
+      "source" : "LOAD_DATASET19",
+      "target" : "JOIN17"
+    }, {
+      "source" : "JOIN23",
+      "target" : "JOIN18"
+    }, {
+      "source" : "LOAD_DATASET19",
+      "target" : "JOIN18"
+    }, {
+      "source" : "JOIN24",
+      "target" : "JOIN19"
+    }, {
+      "source" : "LOAD_DATASET19",
+      "target" : "JOIN19"
+    }, {
+      "source" : "LOAD_DATASET15",
+      "target" : "JOIN20"
+    }, {
+      "source" : "LOAD_DATASET19",
+      "target" : "JOIN20"
+    }, {
+      "source" : "LOAD_DATASET20",
+      "target" : "JOIN9"
+    }, {
+      "source" : "FILTER3",
+      "target" : "JOIN21"
+    }, {
+      "source" : "LOAD_DATASET20",
+      "target" : "JOIN21"
+    }, {
+      "source" : "FILTER4",
+      "target" : "JOIN22"
+    }, {
+      "source" : "LOAD_DATASET20",
+      "target" : "JOIN22"
+    }, {
+      "source" : "LOAD_DATASET20",
+      "target" : "JOIN23"
+    }, {
+      "source" : "FILTER1",
+      "target" : "JOIN24"
+    }, {
+      "source" : "LOAD_DATASET20",
+      "target" : "JOIN24"
+    }, {
+      "source" : "TRANSFORM8",
+      "target" : "FILTER0"
+    }, {
+      "source" : "LOAD_DATASET0",
+      "target" : "FILTER1"
+    }, {
+      "source" : "LOAD_DATASET5",
+      "target" : "FILTER2"
+    }, {
+      "source" : "LOAD_DATASET6",
+      "target" : "FILTER3"
+    }, {
+      "source" : "LOAD_DATASET2",
+      "target" : "FILTER4"
+    }, {
+      "source" : "LOAD_DATASET21",
+      "target" : "JOIN25"
+    }, {
+      "source" : "JOIN18",
+      "target" : "JOIN25"
+    }, {
+      "source" : "JOIN25",
+      "target" : "TRANSFORM3"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "TRANSFORM8"
+    } ],
+    "hiddenColumns" : [ ]
+  },
+  "runMode" : "full"
+}
